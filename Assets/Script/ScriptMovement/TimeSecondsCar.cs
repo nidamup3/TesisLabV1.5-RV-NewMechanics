@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TimeSecondsCar : MonoBehaviour
 {
     [SerializeField] private StartCarTrigger startCarTrigger;
-    [SerializeField] private Text TimeString;
+    //[SerializeField] private Text TimeString;
     [SerializeField] private TableFiller tableFiller10;
     [SerializeField] private TableFiller tableFiller20;
     [SerializeField] private TableFiller tableFiller30;
@@ -71,7 +71,7 @@ public class TimeSecondsCar : MonoBehaviour
             // Detiene la acci n y muestra el tiempo final
             float tiempoFinal = Time.time - tiempoInicio;
             Debug.Log("Tiempo total: " + tiempoFinal.ToString("F2") + " segundos");
-            TimeString.text = $"Tiempo: {tiempoFinal.ToString("F2")} Segundos";
+            //TimeString.text = $"Tiempo: {tiempoFinal.ToString("F2")} Segundos";
             TiempoFinal = tiempoFinal;
             PutTime(tiempoFinal);
         }
@@ -82,62 +82,62 @@ public class TimeSecondsCar : MonoBehaviour
         if (checkWhereCensorIs100.GetIsHere())
         {
             DistanciaGrafica = 100;
-            float tiempoFinal = Random.Range( 1.278f, 1.280f); // Rango para 100
+            float tiempoFinal = Random.Range( 1.278f, 1.28f); // Rango para 100
             tableFiller100.SetFloatArray(tiempoFinal);
         }
         if (checkWhereCensorIs90.GetIsHere())
         {
             DistanciaGrafica = 90;
-            float tiempoFinal = Random.Range(1.192f, 1.195f); // Rango para 90
+            float tiempoFinal = Random.Range(1.190f, 1.195f); // Rango para 90
             tableFiller90.SetFloatArray(tiempoFinal);
         }
         if (checkWhereCensorIs80.GetIsHere())
         {
             DistanciaGrafica = 80;
-            float tiempoFinal = Random.Range( 1.103f, 1.106f); // Rango para 80
+            float tiempoFinal = Random.Range( 1.103f, 1.10f); // Rango para 80
             tableFiller80.SetFloatArray(tiempoFinal);
         }
         if (checkWhereCensorIs70.GetIsHere())
         {
             DistanciaGrafica = 70;
-            float tiempoFinal = Random.Range( 1.007f, 1.009f); // Rango para 70
+            float tiempoFinal = Random.Range( 1.005f, 1.009f); // Rango para 70
             tableFiller70.SetFloatArray(tiempoFinal);
         }
         if (checkWhereCensorIs60.GetIsHere())
         {
             DistanciaGrafica = 60;
-            float tiempoFinal = Random.Range( 0.904f, 0.905f); // Rango para 60
+            float tiempoFinal = Random.Range( 0.904f, 0.907f); // Rango para 60
             tableFiller60.SetFloatArray(tiempoFinal);
         }
 
         if (checkWhereCensorIs50.GetIsHere())
         {
             DistanciaGrafica = 50;
-            float tiempoFinal = Random.Range( 0.792f, 0.794f); // Rango para 50
+            float tiempoFinal = Random.Range( 0.796f, 0.794f); // Rango para 50
             tableFiller50.SetFloatArray(tiempoFinal);
         }
         if (checkWhereCensorIs40.GetIsHere())
         {
             DistanciaGrafica = 40;
-            float tiempoFinal = Random.Range( 0.671f, 0.673f); // Rango para 40
+            float tiempoFinal = Random.Range( 0.671f, 0.678f); // Rango para 40
             tableFiller40.SetFloatArray(tiempoFinal);
         }
         if (checkWhereCensorIs30.GetIsHere())
         {
             DistanciaGrafica = 30;
-            float tiempoFinal = Random.Range(0.536f, 0.537f); // Rango para 30
+            float tiempoFinal = Random.Range(0.533f, 0.537f); // Rango para 30
             tableFiller30.SetFloatArray(tiempoFinal);
         }
         if (checkWhereCensorIs20.GetIsHere())
         {
             DistanciaGrafica = 20;
-            float tiempoFinal = Random.Range(0.382f, 0.383f); // Rango para 20
+            float tiempoFinal = Random.Range(0.382f, 0.385f); // Rango para 20
             tableFiller20.SetFloatArray(tiempoFinal);
         }
         if (checkWhereCensorIs10.GetIsHere())
         {
             DistanciaGrafica = 10;
-            float tiempoFinal = Random.Range(0.198f, 0.2f); // Rango para 10
+            float tiempoFinal = Random.Range(0.198f, 0.233f); // Rango para 10
             tableFiller10.SetFloatArray(tiempoFinal);
         }
     }

@@ -82,61 +82,61 @@ public class TiimeSecondBall : MonoBehaviour
         if (checkWhereCensorIs10.GetIsHere())
         {
             DistanciaGrafica = 10;
-            float tiempoFinal = Random.Range(0.12496f, 0.14024f); // Rango para 10
+            float tiempoFinal = Random.Range(0.125f, 0.140f); // Rango para 10
             tableFiller10.SetFloatArray(tiempoFinal);
         }
         if (checkWhereCensorIs20.GetIsHere())
         {
             DistanciaGrafica = 20;
-            float tiempoFinal = Random.Range(0.20182f, 0.21018f); // Rango para 20
+            float tiempoFinal = Random.Range(0.202f, 0.210f); // Rango para 20
             tableFiller20.SetFloatArray(tiempoFinal);
         }
         if (checkWhereCensorIs30.GetIsHere())
         {
             DistanciaGrafica = 30;
-            float tiempoFinal = Random.Range(0.25568f, 0.26512f); // Rango para 30
+            float tiempoFinal = Random.Range(0.256f, 0.265f); // Rango para 30
             tableFiller30.SetFloatArray(tiempoFinal);
         }
         if (checkWhereCensorIs40.GetIsHere())
         {
             DistanciaGrafica = 40;
-            float tiempoFinal = Random.Range(0.28421f, 0.29539f); // Rango para 40
+            float tiempoFinal = Random.Range(0.284f, 0.295f); // Rango para 40
             tableFiller40.SetFloatArray(tiempoFinal);
         }
         if (checkWhereCensorIs50.GetIsHere())
         {
             DistanciaGrafica = 50;
-            float tiempoFinal = Random.Range(0.30893f, 0.34227f); // Rango para 50
+            float tiempoFinal = Random.Range(0.309f, 0.342f); // Rango para 50
             tableFiller50.SetFloatArray(tiempoFinal);
         }
         if (checkWhereCensorIs60.GetIsHere())
         {
             DistanciaGrafica = 60;
-            float tiempoFinal = Random.Range(0.12496f, 0.14024f); // Rango para 10
+            float tiempoFinal = Random.Range(0.360f, 0.374f); // Rango para 10
             tableFiller60.SetFloatArray(tiempoFinal);
         }
         if (checkWhereCensorIs70.GetIsHere())
         {
             DistanciaGrafica = 70;
-            float tiempoFinal = Random.Range(0.20182f, 0.21018f); // Rango para 20
+            float tiempoFinal = Random.Range(0.360f, 0.408f); // Rango para 20
             tableFiller70.SetFloatArray(tiempoFinal);
         }
         if (checkWhereCensorIs80.GetIsHere())
         {
             DistanciaGrafica = 80;
-            float tiempoFinal = Random.Range(0.25568f, 0.26512f); // Rango para 30
+            float tiempoFinal = Random.Range(0.407f, 0.430f); // Rango para 30
             tableFiller80.SetFloatArray(tiempoFinal);
         }
         if (checkWhereCensorIs90.GetIsHere())
         {
             DistanciaGrafica = 90;
-            float tiempoFinal = Random.Range(0.28421f, 0.29539f); // Rango para 40
+            float tiempoFinal = Random.Range(0.344f, 0.478f); // Rango para 40
             tableFiller90.SetFloatArray(tiempoFinal);
         }
         if (checkWhereCensorIs100.GetIsHere())
         {
             DistanciaGrafica = 100;
-            float tiempoFinal = Random.Range(0.30893f, 0.34227f); // Rango para 50
+            float tiempoFinal = Random.Range(0.366f, 0.505f); // Rango para 50
             tableFiller100.SetFloatArray(tiempoFinal);
         }
     }
