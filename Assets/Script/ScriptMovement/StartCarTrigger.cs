@@ -6,6 +6,9 @@ public class StartCarTrigger : MonoBehaviour
 {
     [SerializeField] private CarMovement carMovement;
     [SerializeField] private TimeSecondsCar timeSecondsCar;
+    [SerializeField] private Animator  Masa;
+    [SerializeField] private Animator CuerdaX;
+    [SerializeField] private Animator CuerdaY;
     private bool IsEnterStartCollider;
     private string HANDTAG = "Hand";
 
@@ -14,10 +17,17 @@ public class StartCarTrigger : MonoBehaviour
         if (other.gameObject.tag == HANDTAG)
         {
             carMovement.MoveCar();
+            StartAnimations();
             IsEnterStartCollider = true;
             timeSecondsCar.IniciarAccion();
             Debug.Log("Car Enter Trigger!!");
         }            
+    }
+    private void StartAnimations ()
+    {
+        Masa.enabled = true;
+        CuerdaX.enabled = true;
+        CuerdaY.enabled = true;
     }
 
     public bool GetIsEnterStartCollider() => IsEnterStartCollider;

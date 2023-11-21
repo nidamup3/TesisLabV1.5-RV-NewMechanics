@@ -130,13 +130,13 @@ public class TiimeSecondBall : MonoBehaviour
         if (checkWhereCensorIs90.GetIsHere())
         {
             DistanciaGrafica = 90;
-            float tiempoFinal = Random.Range(0.344f, 0.478f); // Rango para 40
+            float tiempoFinal = Random.Range(0.435f, 0.450f); // Rango para 40
             tableFiller90.SetFloatArray(tiempoFinal);
         }
         if (checkWhereCensorIs100.GetIsHere())
         {
             DistanciaGrafica = 100;
-            float tiempoFinal = Random.Range(0.366f, 0.505f); // Rango para 50
+            float tiempoFinal = Random.Range(0.458f, 0.472f); // Rango para 50
             tableFiller100.SetFloatArray(tiempoFinal);
         }
     }
